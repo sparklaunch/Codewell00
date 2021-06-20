@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftRichString
 
 class ViewController: UIViewController {
     @IBOutlet var getStartedTextField: UITextField!
@@ -32,10 +33,14 @@ extension ViewController {
         self.discountLabel.attributedText = underlineAttributedString
     }
     func initializeSubtitleLabel() {
-        let string: String = "Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing just that."
-        let italicFont: UIFont = UIFont(name: "Helvetica", size: 18)!
-        let attributedString: NSMutableAttributedString = NSMutableAttributedString(string: string, attributes: [NSAttributedString.Key.font: italicFont])
-        attributedString.addAttribute(NSAttributedString.Key.font, value: italicFont, range: NSMakeRange(30, 36))
+        let string: String = "Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <italic>just</italic> that."
+        let style: Style = Style {
+            $0.font = SystemFonts.Helvetica.font(size: 18)
+            $0.traitVariants = .italic
+        }
+        let styleGroup = StyleXML(["italic": style])
+        let attributedString: NSAttributedString = string.set(style: styleGroup)
+        self.subtitleLabel.attributedText = attributedString
     }
     func initializeGetStartedButton() {
         self.getStartedButton.layer.cornerRadius = 5.0
