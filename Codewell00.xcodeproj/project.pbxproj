@@ -13,9 +13,11 @@
 		2E95AC06267DCC6500443CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E95AC04267DCC6500443CF5 /* Main.storyboard */; };
 		2E95AC08267DCC6700443CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E95AC07267DCC6700443CF5 /* Assets.xcassets */; };
 		2E95AC0B267DCC6700443CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E95AC09267DCC6700443CF5 /* LaunchScreen.storyboard */; };
+		C891D49023E249E1C88C7071 /* Pods_Codewell00.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229877F64DB7D4D54657F2B2 /* Pods_Codewell00.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		229877F64DB7D4D54657F2B2 /* Pods_Codewell00.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codewell00.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E95ABFB267DCC6500443CF5 /* Codewell00.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codewell00.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E95ABFE267DCC6500443CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E95AC00267DCC6500443CF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		2E95AC07267DCC6700443CF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E95AC0A267DCC6700443CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E95AC0C267DCC6800443CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82187D0E99F08CE60B2AE79E /* Pods-Codewell00.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codewell00.release.xcconfig"; path = "Target Support Files/Pods-Codewell00/Pods-Codewell00.release.xcconfig"; sourceTree = "<group>"; };
+		F0469158DBAC83F8A00134FE /* Pods-Codewell00.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codewell00.debug.xcconfig"; path = "Target Support Files/Pods-Codewell00/Pods-Codewell00.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C891D49023E249E1C88C7071 /* Pods_Codewell00.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2E95ABFD267DCC6500443CF5 /* Codewell00 */,
 				2E95ABFC267DCC6500443CF5 /* Products */,
+				4BF835178FB84DE6CE5024FF /* Pods */,
+				9EA2BEA305CD13F786E5453C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +106,24 @@
 			path = Supports;
 			sourceTree = "<group>";
 		};
+		4BF835178FB84DE6CE5024FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0469158DBAC83F8A00134FE /* Pods-Codewell00.debug.xcconfig */,
+				82187D0E99F08CE60B2AE79E /* Pods-Codewell00.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9EA2BEA305CD13F786E5453C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				229877F64DB7D4D54657F2B2 /* Pods_Codewell00.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E95AC0F267DCC6800443CF5 /* Build configuration list for PBXNativeTarget "Codewell00" */;
 			buildPhases = (
+				0FAC4C3B45491B4BD71EE055 /* [CP] Check Pods Manifest.lock */,
 				2E95ABF7267DCC6500443CF5 /* Sources */,
 				2E95ABF8267DCC6500443CF5 /* Frameworks */,
 				2E95ABF9267DCC6500443CF5 /* Resources */,
+				60BBDCF3D3C3E82FB8F88D7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +190,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FAC4C3B45491B4BD71EE055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Codewell00-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60BBDCF3D3C3E82FB8F88D7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Codewell00/Pods-Codewell00-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Codewell00/Pods-Codewell00-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Codewell00/Pods-Codewell00-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E95ABF7267DCC6500443CF5 /* Sources */ = {
@@ -315,6 +384,7 @@
 		};
 		2E95AC10267DCC6800443CF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0469158DBAC83F8A00134FE /* Pods-Codewell00.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,6 +404,7 @@
 		};
 		2E95AC11267DCC6800443CF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82187D0E99F08CE60B2AE79E /* Pods-Codewell00.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

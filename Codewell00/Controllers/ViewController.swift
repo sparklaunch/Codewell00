@@ -46,5 +46,7 @@ extension ViewController {
         self.getStartedTextField.layer.borderColor = UIColor.systemGray.cgColor
         self.getStartedTextField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.getStartedTextField.frame.size.height))
         self.getStartedTextField.leftViewMode = .always
+        self.getStartedTextField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.getStartedTextField.frame.size.height))
+        self.getStartedTextField.rightViewMode = .always
     }
 }
