@@ -14,14 +14,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Codewell00" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZI1-FG-alX">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1980"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="2980"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TM9-aw-bxL" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsZ-v9-Gk3">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="117"/>
@@ -287,21 +287,63 @@
                                                     <constraint firstItem="E9l-Mn-K30" firstAttribute="leading" secondItem="bTM-yz-5QO" secondAttribute="leading" constant="30" id="ygA-rX-NYo"/>
                                                 </constraints>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A text editor like no other." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rb7-Bl-nyG">
+                                                <rect key="frame" x="30" y="1979.5" width="354" height="86"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAN-lX-6IA">
+                                                <rect key="frame" x="30" y="2075.5" width="354" height="77.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Our text editor pulls you into focus mode with its simplistic design and usability, so you can put out your best writings.">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="18"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Editor Live Demo →" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZo-Ye-mNL">
+                                                <rect key="frame" x="30" y="2183" width="354" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Editor" translatesAutoresizingMaskIntoConstraints="NO" id="1xv-pK-YnF">
+                                                <rect key="frame" x="0.0" y="2253.5" width="414" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="OYF-5d-EL7"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="FsM-Dq-vQw" secondAttribute="trailing" id="0us-nX-G8m"/>
                                             <constraint firstItem="bsZ-v9-Gk3" firstAttribute="top" secondItem="TM9-aw-bxL" secondAttribute="top" id="2wE-gl-VJN"/>
+                                            <constraint firstItem="bAN-lX-6IA" firstAttribute="top" secondItem="Rb7-Bl-nyG" secondAttribute="bottom" constant="10" id="7gI-eW-ei0"/>
+                                            <constraint firstAttribute="trailing" secondItem="bAN-lX-6IA" secondAttribute="trailing" constant="30" id="7mQ-tt-UvM"/>
                                             <constraint firstAttribute="trailing" secondItem="bsZ-v9-Gk3" secondAttribute="trailing" id="8jc-77-gQN"/>
+                                            <constraint firstItem="Rb7-Bl-nyG" firstAttribute="top" secondItem="bTM-yz-5QO" secondAttribute="bottom" constant="50" id="HBS-bW-87K"/>
+                                            <constraint firstItem="xZo-Ye-mNL" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" constant="30" id="JYR-K7-vq6"/>
                                             <constraint firstItem="nKC-bd-6Q1" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" constant="30" id="KdG-sd-7Pp"/>
                                             <constraint firstAttribute="trailing" secondItem="bTM-yz-5QO" secondAttribute="trailing" constant="30" id="RgA-ly-DN8"/>
+                                            <constraint firstAttribute="trailing" secondItem="xZo-Ye-mNL" secondAttribute="trailing" constant="30" id="VbR-wE-7pc"/>
+                                            <constraint firstItem="1xv-pK-YnF" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" id="Vvd-Ck-LPn"/>
+                                            <constraint firstItem="1xv-pK-YnF" firstAttribute="top" secondItem="xZo-Ye-mNL" secondAttribute="bottom" constant="50" id="XKJ-0n-JSs"/>
                                             <constraint firstAttribute="trailing" secondItem="nKC-bd-6Q1" secondAttribute="trailing" constant="30" id="XVH-aa-7It"/>
                                             <constraint firstItem="nKC-bd-6Q1" firstAttribute="top" secondItem="FsM-Dq-vQw" secondAttribute="bottom" constant="30" id="a7d-pJ-Gd6"/>
                                             <constraint firstItem="bTM-yz-5QO" firstAttribute="top" secondItem="nKC-bd-6Q1" secondAttribute="bottom" constant="30" id="cYq-Ak-JvX"/>
-                                            <constraint firstAttribute="height" constant="2000" id="cZ8-Fn-2lY"/>
+                                            <constraint firstAttribute="height" constant="3000" id="cZ8-Fn-2lY"/>
                                             <constraint firstItem="FsM-Dq-vQw" firstAttribute="top" secondItem="bsZ-v9-Gk3" secondAttribute="bottom" id="l5i-iC-YET"/>
+                                            <constraint firstItem="bAN-lX-6IA" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" constant="30" id="lyl-vc-4FM"/>
+                                            <constraint firstItem="xZo-Ye-mNL" firstAttribute="top" secondItem="bAN-lX-6IA" secondAttribute="bottom" constant="30" id="njT-Mi-3WA"/>
                                             <constraint firstItem="FsM-Dq-vQw" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" id="qj3-KL-Pcr"/>
+                                            <constraint firstAttribute="trailing" secondItem="1xv-pK-YnF" secondAttribute="trailing" id="uoT-9W-Krm"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rb7-Bl-nyG" secondAttribute="trailing" constant="30" id="upT-GR-vXp"/>
                                             <constraint firstItem="bsZ-v9-Gk3" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" id="yJT-nh-rgP"/>
+                                            <constraint firstItem="Rb7-Bl-nyG" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" constant="30" id="ygl-iB-aAY"/>
                                             <constraint firstItem="bTM-yz-5QO" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" constant="30" id="ywP-hb-DCc"/>
                                         </constraints>
                                     </view>
@@ -324,13 +366,14 @@
                             <constraint firstItem="ZI1-FG-alX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tWN-Kb-5kP"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="2000"/>
+                    <size key="freeformSize" width="414" height="3000"/>
                     <connections>
                         <outlet property="containerView" destination="bTM-yz-5QO" id="Swf-fr-9Ot"/>
                         <outlet property="discountLabel" destination="8Oe-sL-Zuq" id="jPj-Yf-Tyc"/>
                         <outlet property="getStartedButton" destination="0OY-0t-Ezb" id="fxN-kt-8bB"/>
                         <outlet property="getStartedTextField" destination="w1E-Zr-k7k" id="xx9-6r-LrX"/>
                         <outlet property="learnLabel" destination="Ozq-22-gdy" id="Icr-ep-Na4"/>
+                        <outlet property="liveDemoLabel" destination="xZo-Ye-mNL" id="8Ac-hz-ZQF"/>
                         <outlet property="subtitleLabel" destination="uSF-MX-z7M" id="Dln-c0-S5S"/>
                     </connections>
                 </viewController>
@@ -342,6 +385,7 @@
     <resources>
         <image name="Checkmark" width="24" height="24"/>
         <image name="Dribble" width="136" height="33"/>
+        <image name="Editor" width="874.5" height="572"/>
         <image name="Facebook" width="170.5" height="33"/>
         <image name="Hero" width="567" height="692"/>
         <image name="Mockup" width="1708" height="1440"/>

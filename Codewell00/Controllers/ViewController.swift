@@ -9,6 +9,7 @@ import UIKit
 import SwiftRichString
 
 class ViewController: UIViewController {
+    @IBOutlet var liveDemoLabel: UILabel!
     @IBOutlet var learnLabel: UILabel!
     @IBOutlet var containerView: UIView!
     @IBOutlet var getStartedTextField: UITextField!
@@ -31,6 +32,7 @@ extension ViewController {
         self.initializeGetStartedTextField()
         self.initializeContainerView()
         self.initializeLearnLabel()
+        self.initializeLiveDemoLabel()
     }
     func initializeDiscountLabel() {
         let string: String = "You will be receiving 100% of the earnings. 🎉"
@@ -71,5 +73,14 @@ extension ViewController {
         }
         let attributedText: NSAttributedString = string.set(style: style)
         self.learnLabel.attributedText = attributedText
+    }
+    func initializeLiveDemoLabel() {
+        let string: String = "Text Editor Live Demo →"
+        let style: Style = Style {
+            $0.font = UIFont.boldSystemFont(ofSize: 18)
+            $0.underline = (.single, UIColor.black)
+        }
+        let attributedText: NSAttributedString = string.set(style: style)
+        self.liveDemoLabel.attributedText = attributedText
     }
 }
