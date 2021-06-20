@@ -317,6 +317,40 @@
                                                     <constraint firstAttribute="height" constant="300" id="OYF-5d-EL7"/>
                                                 </constraints>
                                             </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sE-2O-8Vp">
+                                                <rect key="frame" x="0.0" y="2553.5" width="414" height="446.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="spense." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-VR-Bve">
+                                                        <rect key="frame" x="30" y="50" width="354" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejp-0g-1it">
+                                                        <rect key="frame" x="30" y="81.5" width="354" height="97.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment>
+                                                                <string key="content">Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing just that.</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" name="Background"/>
+                                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="jgT-VR-Bve" firstAttribute="leading" secondItem="1sE-2O-8Vp" secondAttribute="leading" constant="30" id="1Ud-xG-fPw"/>
+                                                    <constraint firstItem="ejp-0g-1it" firstAttribute="leading" secondItem="1sE-2O-8Vp" secondAttribute="leading" constant="30" id="Plz-ge-seV"/>
+                                                    <constraint firstItem="ejp-0g-1it" firstAttribute="top" secondItem="jgT-VR-Bve" secondAttribute="bottom" constant="10" id="aKd-GB-BcX"/>
+                                                    <constraint firstItem="jgT-VR-Bve" firstAttribute="top" secondItem="1sE-2O-8Vp" secondAttribute="top" constant="50" id="dhq-Sk-XvT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ejp-0g-1it" secondAttribute="trailing" constant="30" id="e3K-4j-qdR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jgT-VR-Bve" secondAttribute="trailing" constant="30" id="j5R-gl-NKr"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -325,10 +359,12 @@
                                             <constraint firstItem="bAN-lX-6IA" firstAttribute="top" secondItem="Rb7-Bl-nyG" secondAttribute="bottom" constant="10" id="7gI-eW-ei0"/>
                                             <constraint firstAttribute="trailing" secondItem="bAN-lX-6IA" secondAttribute="trailing" constant="30" id="7mQ-tt-UvM"/>
                                             <constraint firstAttribute="trailing" secondItem="bsZ-v9-Gk3" secondAttribute="trailing" id="8jc-77-gQN"/>
+                                            <constraint firstAttribute="trailing" secondItem="1sE-2O-8Vp" secondAttribute="trailing" id="DRv-4d-cyr"/>
                                             <constraint firstItem="Rb7-Bl-nyG" firstAttribute="top" secondItem="bTM-yz-5QO" secondAttribute="bottom" constant="50" id="HBS-bW-87K"/>
                                             <constraint firstItem="xZo-Ye-mNL" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" constant="30" id="JYR-K7-vq6"/>
                                             <constraint firstItem="nKC-bd-6Q1" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" constant="30" id="KdG-sd-7Pp"/>
                                             <constraint firstAttribute="trailing" secondItem="bTM-yz-5QO" secondAttribute="trailing" constant="30" id="RgA-ly-DN8"/>
+                                            <constraint firstItem="1sE-2O-8Vp" firstAttribute="top" secondItem="1xv-pK-YnF" secondAttribute="bottom" id="VV8-1F-Ebj"/>
                                             <constraint firstAttribute="trailing" secondItem="xZo-Ye-mNL" secondAttribute="trailing" constant="30" id="VbR-wE-7pc"/>
                                             <constraint firstItem="1xv-pK-YnF" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" id="Vvd-Ck-LPn"/>
                                             <constraint firstItem="1xv-pK-YnF" firstAttribute="top" secondItem="xZo-Ye-mNL" secondAttribute="bottom" constant="50" id="XKJ-0n-JSs"/>
@@ -336,9 +372,11 @@
                                             <constraint firstItem="nKC-bd-6Q1" firstAttribute="top" secondItem="FsM-Dq-vQw" secondAttribute="bottom" constant="30" id="a7d-pJ-Gd6"/>
                                             <constraint firstItem="bTM-yz-5QO" firstAttribute="top" secondItem="nKC-bd-6Q1" secondAttribute="bottom" constant="30" id="cYq-Ak-JvX"/>
                                             <constraint firstAttribute="height" constant="3000" id="cZ8-Fn-2lY"/>
+                                            <constraint firstItem="1sE-2O-8Vp" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" id="e3a-IC-PUR"/>
                                             <constraint firstItem="FsM-Dq-vQw" firstAttribute="top" secondItem="bsZ-v9-Gk3" secondAttribute="bottom" id="l5i-iC-YET"/>
                                             <constraint firstItem="bAN-lX-6IA" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" constant="30" id="lyl-vc-4FM"/>
                                             <constraint firstItem="xZo-Ye-mNL" firstAttribute="top" secondItem="bAN-lX-6IA" secondAttribute="bottom" constant="30" id="njT-Mi-3WA"/>
+                                            <constraint firstAttribute="bottom" secondItem="1sE-2O-8Vp" secondAttribute="bottom" id="pr6-dv-wjm"/>
                                             <constraint firstItem="FsM-Dq-vQw" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" id="qj3-KL-Pcr"/>
                                             <constraint firstAttribute="trailing" secondItem="1xv-pK-YnF" secondAttribute="trailing" id="uoT-9W-Krm"/>
                                             <constraint firstAttribute="trailing" secondItem="Rb7-Bl-nyG" secondAttribute="trailing" constant="30" id="upT-GR-vXp"/>
@@ -370,6 +408,7 @@
                     <connections>
                         <outlet property="containerView" destination="bTM-yz-5QO" id="Swf-fr-9Ot"/>
                         <outlet property="discountLabel" destination="8Oe-sL-Zuq" id="jPj-Yf-Tyc"/>
+                        <outlet property="footerLabel" destination="ejp-0g-1it" id="uZr-S2-dpu"/>
                         <outlet property="getStartedButton" destination="0OY-0t-Ezb" id="fxN-kt-8bB"/>
                         <outlet property="getStartedTextField" destination="w1E-Zr-k7k" id="xx9-6r-LrX"/>
                         <outlet property="learnLabel" destination="Ozq-22-gdy" id="Icr-ep-Na4"/>

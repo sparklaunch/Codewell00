@@ -9,6 +9,7 @@ import UIKit
 import SwiftRichString
 
 class ViewController: UIViewController {
+    @IBOutlet var footerLabel: UILabel!
     @IBOutlet var liveDemoLabel: UILabel!
     @IBOutlet var learnLabel: UILabel!
     @IBOutlet var containerView: UIView!
@@ -33,6 +34,7 @@ extension ViewController {
         self.initializeContainerView()
         self.initializeLearnLabel()
         self.initializeLiveDemoLabel()
+        self.initializeFooterLabel()
     }
     func initializeDiscountLabel() {
         let string: String = "You will be receiving 100% of the earnings. 🎉"
@@ -82,5 +84,19 @@ extension ViewController {
         }
         let attributedText: NSAttributedString = string.set(style: style)
         self.liveDemoLabel.attributedText = attributedText
+    }
+    func initializeFooterLabel() {
+        let string: String = "Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid doing <italic>just</italic> that."
+        let baseStyle: Style = Style {
+            $0.font = UIFont.systemFont(ofSize: 18)
+            $0.lineSpacing = 10
+        }
+        let style: Style = Style {
+            $0.font = UIFont.systemFont(ofSize: 18)
+            $0.traitVariants = .italic
+        }
+        let styleGroup: StyleXML = StyleXML(base: baseStyle, ["italic": style])
+        let attributedString: NSAttributedString = string.set(style: styleGroup)
+        self.footerLabel.attributedText = attributedString
     }
 }
