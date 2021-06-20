@@ -9,6 +9,8 @@ import UIKit
 import SwiftRichString
 
 class ViewController: UIViewController {
+    @IBOutlet var learnLabel: UILabel!
+    @IBOutlet var containerView: UIView!
     @IBOutlet var getStartedTextField: UITextField!
     @IBOutlet var getStartedButton: UIButton!
     @IBOutlet var subtitleLabel: UILabel!
@@ -27,6 +29,8 @@ extension ViewController {
         self.initializeSubtitleLabel()
         self.initializeGetStartedButton()
         self.initializeGetStartedTextField()
+        self.initializeContainerView()
+        self.initializeLearnLabel()
     }
     func initializeDiscountLabel() {
         let string: String = "You will be receiving 100% of the earnings. 🎉"
@@ -37,7 +41,7 @@ extension ViewController {
     func initializeSubtitleLabel() {
         let string: String = "Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <italic>just</italic> that."
         let style: Style = Style {
-            $0.font = SystemFonts.Helvetica.font(size: 18)
+            $0.font = UIFont.systemFont(ofSize: 18)
             $0.traitVariants = .italic
         }
         let styleGroup = StyleXML(["italic": style])
@@ -55,5 +59,17 @@ extension ViewController {
         self.getStartedTextField.leftViewMode = .always
         self.getStartedTextField.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.getStartedTextField.frame.size.height))
         self.getStartedTextField.rightViewMode = .always
+    }
+    func initializeContainerView() {
+        self.containerView.layer.cornerRadius = 20.0
+    }
+    func initializeLearnLabel() {
+        let string: String = "Learn more about Escrow →"
+        let style: Style = Style {
+            $0.font = UIFont.boldSystemFont(ofSize: 18)
+            $0.underline = (.single, UIColor.black)
+        }
+        let attributedText: NSAttributedString = string.set(style: style)
+        self.learnLabel.attributedText = attributedText
     }
 }

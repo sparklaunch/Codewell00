@@ -14,14 +14,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Codewell00" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZI1-FG-alX">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1980"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TM9-aw-bxL" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsZ-v9-Gk3">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="117"/>
@@ -234,6 +234,59 @@
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTM-yz-5QO">
+                                                <rect key="frame" x="30" y="1270" width="354" height="659.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secure your money with Escrow." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSo-vq-btE">
+                                                        <rect key="frame" x="30" y="30" width="294" height="129"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9l-Mn-K30">
+                                                        <rect key="frame" x="30" y="179" width="294" height="129"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment>
+                                                                <string key="content">Spense uses Escrow to secure all payments. We believe Escrow offers the highest level of security for your payments, so you never need to worry about scams.</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" metaFont="system" size="18"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Learn more about Escrow →" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozq-22-gdy">
+                                                        <rect key="frame" x="30" y="338" width="294" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mockup" translatesAutoresizingMaskIntoConstraints="NO" id="0Rz-Oe-qZ1">
+                                                        <rect key="frame" x="30" y="409.5" width="294" height="250"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="250" id="fxD-IW-k9q"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="Background"/>
+                                                <constraints>
+                                                    <constraint firstItem="hSo-vq-btE" firstAttribute="leading" secondItem="bTM-yz-5QO" secondAttribute="leading" constant="30" id="5N4-Hp-UWb"/>
+                                                    <constraint firstItem="0Rz-Oe-qZ1" firstAttribute="top" secondItem="Ozq-22-gdy" secondAttribute="bottom" constant="50" id="5SQ-pa-YRc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0Rz-Oe-qZ1" secondAttribute="trailing" constant="30" id="KHp-dg-FN1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ozq-22-gdy" secondAttribute="trailing" constant="30" id="OCc-rF-ygt"/>
+                                                    <constraint firstItem="Ozq-22-gdy" firstAttribute="top" secondItem="E9l-Mn-K30" secondAttribute="bottom" constant="30" id="S5S-eZ-Udc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0Rz-Oe-qZ1" secondAttribute="bottom" id="VbT-c6-BQU"/>
+                                                    <constraint firstItem="Ozq-22-gdy" firstAttribute="leading" secondItem="bTM-yz-5QO" secondAttribute="leading" constant="30" id="d0c-gO-p3N"/>
+                                                    <constraint firstAttribute="trailing" secondItem="E9l-Mn-K30" secondAttribute="trailing" constant="30" id="f5j-ge-UPg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hSo-vq-btE" secondAttribute="trailing" constant="30" id="fha-yk-Jvk"/>
+                                                    <constraint firstItem="0Rz-Oe-qZ1" firstAttribute="leading" secondItem="bTM-yz-5QO" secondAttribute="leading" constant="30" id="mUL-B7-K17"/>
+                                                    <constraint firstItem="E9l-Mn-K30" firstAttribute="top" secondItem="hSo-vq-btE" secondAttribute="bottom" constant="20" id="rY3-yU-IWt"/>
+                                                    <constraint firstItem="hSo-vq-btE" firstAttribute="top" secondItem="bTM-yz-5QO" secondAttribute="top" constant="30" id="tIP-Kt-r0y"/>
+                                                    <constraint firstItem="E9l-Mn-K30" firstAttribute="leading" secondItem="bTM-yz-5QO" secondAttribute="leading" constant="30" id="ygA-rX-NYo"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -241,12 +294,15 @@
                                             <constraint firstItem="bsZ-v9-Gk3" firstAttribute="top" secondItem="TM9-aw-bxL" secondAttribute="top" id="2wE-gl-VJN"/>
                                             <constraint firstAttribute="trailing" secondItem="bsZ-v9-Gk3" secondAttribute="trailing" id="8jc-77-gQN"/>
                                             <constraint firstItem="nKC-bd-6Q1" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" constant="30" id="KdG-sd-7Pp"/>
+                                            <constraint firstAttribute="trailing" secondItem="bTM-yz-5QO" secondAttribute="trailing" constant="30" id="RgA-ly-DN8"/>
                                             <constraint firstAttribute="trailing" secondItem="nKC-bd-6Q1" secondAttribute="trailing" constant="30" id="XVH-aa-7It"/>
                                             <constraint firstItem="nKC-bd-6Q1" firstAttribute="top" secondItem="FsM-Dq-vQw" secondAttribute="bottom" constant="30" id="a7d-pJ-Gd6"/>
-                                            <constraint firstAttribute="height" constant="1500" id="cZ8-Fn-2lY"/>
+                                            <constraint firstItem="bTM-yz-5QO" firstAttribute="top" secondItem="nKC-bd-6Q1" secondAttribute="bottom" constant="30" id="cYq-Ak-JvX"/>
+                                            <constraint firstAttribute="height" constant="2000" id="cZ8-Fn-2lY"/>
                                             <constraint firstItem="FsM-Dq-vQw" firstAttribute="top" secondItem="bsZ-v9-Gk3" secondAttribute="bottom" id="l5i-iC-YET"/>
                                             <constraint firstItem="FsM-Dq-vQw" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" id="qj3-KL-Pcr"/>
                                             <constraint firstItem="bsZ-v9-Gk3" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" id="yJT-nh-rgP"/>
+                                            <constraint firstItem="bTM-yz-5QO" firstAttribute="leading" secondItem="TM9-aw-bxL" secondAttribute="leading" constant="30" id="ywP-hb-DCc"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -268,11 +324,13 @@
                             <constraint firstItem="ZI1-FG-alX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tWN-Kb-5kP"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="1500"/>
+                    <size key="freeformSize" width="414" height="2000"/>
                     <connections>
+                        <outlet property="containerView" destination="bTM-yz-5QO" id="Swf-fr-9Ot"/>
                         <outlet property="discountLabel" destination="8Oe-sL-Zuq" id="jPj-Yf-Tyc"/>
                         <outlet property="getStartedButton" destination="0OY-0t-Ezb" id="fxN-kt-8bB"/>
                         <outlet property="getStartedTextField" destination="w1E-Zr-k7k" id="xx9-6r-LrX"/>
+                        <outlet property="learnLabel" destination="Ozq-22-gdy" id="Icr-ep-Na4"/>
                         <outlet property="subtitleLabel" destination="uSF-MX-z7M" id="Dln-c0-S5S"/>
                     </connections>
                 </viewController>
@@ -286,6 +344,7 @@
         <image name="Dribble" width="136" height="33"/>
         <image name="Facebook" width="170.5" height="33"/>
         <image name="Hero" width="567" height="692"/>
+        <image name="Mockup" width="1708" height="1440"/>
         <image name="Youtube" width="172" height="38.5"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <namedColor name="Background">
