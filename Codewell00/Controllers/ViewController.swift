@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     }
 }
 
+// MARK: - Initializations
+
 extension ViewController {
     func initialize() {
         self.initializeDiscountLabel()
